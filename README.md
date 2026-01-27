@@ -8,7 +8,7 @@ Normal:
 The lungs appear healthy, with no visible signs of infection, inflammation, or abnormal fluid. The lung fields are clear and show normal structure.
 
 Pneumonia:
-Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.\
+Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.
 
 Accurate classification of chest X-ray images can help support early detection of pneumonia and improve patient care. \
 In this mini-challenge, the goal is to classify chest X-ray images as Normal or Pneumonia using graph-based learning.
@@ -26,7 +26,12 @@ The dataset is class-imbalanced, with more Pneumonia images than Normal images. 
 * Test set-> Normal = 234 | Pneumonia = 390
 * Total-> Normal = 1575 | Pneumonia = 4265
 
-Below are example chest X-ray images from the dataset, illustrating the visual differences between Normal and Pneumonia cases.
+Below are example chest X-ray images from the dataset, illustrating the visual differences between Normal and Pneumonia cases.\
+**Normal**
+![Normal Chest X-ray](images/NORMAL2-IM-1427-0001.jpeg)
+
+**Pneumonia**
+![Pneumonia Chest X-ray](images/person1949_bacteria_4880.jpeg)
 
 # Evaluation metric
 We evaluate performance using Macro F1-score, which is suitable for imbalanced node classification tasks.\
