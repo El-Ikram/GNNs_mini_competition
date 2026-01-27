@@ -1,10 +1,21 @@
-# GNNs_mini_competition
-# Predict the research area of a paper based on citation links
+# GNNs Mini Competition: Chest X-ray Normal vs Pneumonia (Node Classification)
+ # 💢Problem Description 
+ A chest X-ray is a medical imaging technique that uses a small amount of radiation to create images of the structures inside the chest, including the lungs, heart, and airways. It is one of the most common and important tools used by doctors to examine lung conditions.
 
- # Problem Description
- Given a citation graph where nodes represent scientific papers and edges represent citations, predict the research field of each paper using graph neural networks.
+Chest X-ray images are classified into two categories:
 
- # Dataset
+Normal:
+The lungs appear healthy, with no visible signs of infection, inflammation, or abnormal fluid. The lung fields are clear and show normal structure.
+
+Pneumonia:
+Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.
+
+Accurate classification of chest X-ray images can help support early detection of pneumonia and improve patient care. \
+In this mini-challenge, the goal is to classify chest X-ray images as Normal or Pneumonia using graph-based learning.
+
+
+
+ # 🛢️Dataset
 We use the Cora citation network, where:\
 Nodes = papers\
 Edges = citations\
