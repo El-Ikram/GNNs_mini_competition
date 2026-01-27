@@ -27,12 +27,18 @@ The dataset is class-imbalanced, with more Pneumonia images than Normal images. 
 * Total-> Normal = 1575 | Pneumonia = 4265
 
 Below are example chest X-ray images from the dataset, illustrating the visual differences between Normal and Pneumonia cases.\
-**Normal**
-![Normal Chest X-ray](images/NORMAL2-IM-1427-0001.jpeg)
+<p align="center">
+  <img src="Images/NORMAL2-IM-1427-0001.jpeg" height="300"  />
+  <img src="Images/person1949_bacteria_4880.jpeg" height="300"  />
+</p>
 
-**Pneumonia**
-![Pneumonia Chest X-ray](images/person1949_bacteria_4880.jpeg)
+<p align="center">
+  <em>Left: Normal chest X-ray — Right: Pneumonia chest X-ray</em>
+</p>
+The dataset is publicly available on Kaggle.
 
+🔗 **Dataset link:**  
+[Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 # Evaluation metric
 We evaluate performance using Macro F1-score, which is suitable for imbalanced node classification tasks.\
 The Macro F1-score is computed by first calculating the F1-score independently for each class and then averaging these scores, assigning equal weight to all classes regardless of their frequency.
