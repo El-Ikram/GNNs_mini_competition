@@ -8,7 +8,7 @@ Normal:
 The lungs appear healthy, with no visible signs of infection, inflammation, or abnormal fluid. The lung fields are clear and show normal structure.
 
 Pneumonia:
-Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.
+Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.\
 
 Accurate classification of chest X-ray images can help support early detection of pneumonia and improve patient care. \
 In this mini-challenge, the goal is to classify chest X-ray images as Normal or Pneumonia using graph-based learning.
@@ -20,10 +20,13 @@ In this mini-challenge, the goal is to classify chest X-ray images as Normal or 
 Participants will design Graph Neural Network (GNN) models that leverage both node features and the graph structure to classify each X-ray image correctly.
 
  # 🛢️Dataset
-We use the Cora citation network, where:\
-Nodes = papers\
-Edges = citations\
-Labels = research topics\
+This mini-challenge uses the Chest X-Ray Images (Pneumonia) dataset, a widely used public medical imaging dataset for lung disease classification. The dataset contains frontal chest X-ray images collected from pediatric patients and labeled by medical experts as either Normal or Pneumonia.\
+The dataset is class-imbalanced, with more Pneumonia images than Normal images. Participants should take this imbalance into account during training and evaluation:
+* Training set-> Normal = 1341 | Pneunomia = 3875
+* Test set-> Normal = 234 | Pneumonia = 390
+* Total-> Normal = 1575 | Pneumonia = 4265
+
+Below are example chest X-ray images from the dataset, illustrating the visual differences between Normal and Pneumonia cases.
 
 # Evaluation metric
 We evaluate performance using Macro F1-score, which is suitable for imbalanced node classification tasks.\
