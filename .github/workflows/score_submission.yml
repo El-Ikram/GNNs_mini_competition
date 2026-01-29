@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -19,11 +18,22 @@ jobs:
           python-version: "3.10"
 
       - name: Install dependencies
-        run: pip install -r starter_code/requirements.txt
+        run: |
+          pip install pandas scikit-learn
 
-      - name: Run scoring script
-        run: python scoring_script.py
+      - name: Run scoring
+        run: |
+          SCORE=$(python scoring_script.py submissions/*.csv | tail -1 | awk '{print $NF}')
+          echo "SCORE=$SCORE" >> $GITHUB_ENV
 
       - name: Update leaderboard
-        run: python update_leaderboard.py
+        run: |
+          python update_leaderboard.py ${{ github.actor }} $SCORE
 
+      - name: Commit leaderboard
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add leaderboard/leaderboard.json
+          git commit -m "Update leaderboard"
+          git push
