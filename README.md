@@ -81,12 +81,14 @@ Ready to compete? Follow these steps to get your model on the leaderboard
  🌟Higher scores climb higher🌟
   
 # 🏆Leaderboard
-The competition features a dynamic, automatically updated leaderboard.
+The competition features a **dynamic, automatically updated leaderboard**.
 * All scores are stored and displayed in real-time on leaderboard/index.html.
 * Participants are ranked according to the official evaluation metric (Macro F1-score).
 * Each entry shows: Rank, Team Name, Score, and Submission Date.
 * The leaderboard updates automatically whenever a valid submission is made via a Pull Request, no manual intervention is needed.
 
-✨Watch your team climb the ranks as you submit!
+✨Watch your team climb the ranks as you submit! 
+
+[View the live leaderboard](leaderboard/index.html)
 # References
 Basira's lab lectures on GNNs.
