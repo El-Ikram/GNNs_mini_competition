@@ -80,10 +80,13 @@ Ready to compete? Follow these steps to get your model on the leaderboard
 
  🌟Higher scores climb higher🌟
   
-# Leaderboard
-All evaluation results will be published in the file Leaderboard.md.\
-Participants will be ranked according to the official evaluation metric.\
-Each entry will include the participant name, score, and submission date.\
-The leaderboard will be updated after each valid submission.
+# 🏆Leaderboard
+The competition features a dynamic, automatically updated leaderboard.
+* All scores are stored and displayed in real-time on leaderboard/index.html.
+* Participants are ranked according to the official evaluation metric (Macro F1-score).
+* Each entry shows: Rank, Team Name, Score, and Submission Date.
+* The leaderboard updates automatically whenever a valid submission is made via a Pull Request, no manual intervention is needed.
+
+✨Watch your team climb the ranks as you submit!
 # References
 Basira's lab lectures on GNNs.
