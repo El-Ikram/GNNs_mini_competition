@@ -2,7 +2,7 @@
 Not all graphs are social networks, some can help diagnose lungs.\
 Behind every chest X-ray lies a complex story waiting to be understood.\
 Welcome to this GNN mini-challenge!! Where chest X-rays become graphs and your model decides: Normal or Pneumonia.
- # 💢Problem Description 
+ ## 💢Problem Description 
  A chest X-ray is a medical imaging technique that uses a small amount of radiation to create images of the structures inside the chest, including the lungs, heart, and airways. It is one of the most common and important tools used by doctors to examine lung conditions.
 
 Chest X-ray images are classified into two categories:
@@ -22,7 +22,7 @@ In this mini-challenge, the goal is to classify chest X-ray images as Normal or 
 
 Participants will design Graph Neural Network (GNN) models that leverage both node features and the graph structure to classify each X-ray image correctly.
 
- # 🛢️Dataset
+ ## 🛢️Dataset
 This mini-challenge uses the Chest X-Ray Images (Pneumonia) dataset, a widely used public medical imaging dataset for lung disease classification. The dataset contains frontal chest X-ray images collected from pediatric patients and labeled by medical experts as either Normal or Pneumonia.\
 The dataset is class-imbalanced, with more Pneumonia images than Normal images. Participants should take this imbalance into account during training and evaluation:
 * Training set -> Normal = 1341 | Pneunomia = 3875
@@ -61,7 +61,7 @@ By giving equal importance to each class regardless of its frequency, the Macro 
 
 Higher Macro F1 values indicate better overall classification quality across all classes.
 
-# ⚠️Constraints
+## ⚠️Constraints
 To ensure fair competition:
 1. No External Data, only the data provided for this challenge may be used.
 2. No external node features, it must be derived solely from the given dataset.
@@ -71,7 +71,7 @@ To ensure fair competition:
 Think of this as a “from-scratch GNN challenge”, no shortcuts, no pretrained magic, just pure graph learning✨
 
 
-# 📤Submission
+## 📤Submission
 Ready to compete? Follow these steps to get your model on the leaderboard 
 * Each participant needs to fork this repository to his GitHub account.
 * Each participant needs to use the provided starter code as a baseline and implement your GNN model (while respecting all constraints!).
@@ -83,7 +83,7 @@ Ready to compete? Follow these steps to get your model on the leaderboard
 
  🌟Higher scores climb higher🌟
   
-# 🏆Leaderboard
+## 🏆Leaderboard
 The competition features a **dynamic, automatically updated leaderboard**.
 * All scores are stored and displayed in real-time on leaderboard/index.html.
 * Participants are ranked according to the official evaluation metric (Macro F1-score).
@@ -94,8 +94,13 @@ The competition features a **dynamic, automatically updated leaderboard**.
 
 [View the live leaderboard](https://El-Ikram.github.io/CXR_Normal_vs_Pneumonia_Node_Classification/leaderboard/index.html)
 
-# 📚References
+## 📚References
 * Basira's lab lectures on GNNs: [DGL_Videos](https://www.youtube.com/watch?v=gQRV_jUyaDw&list=PLug43ldmRSo14Y_vt7S6vanPGh-JpHR7T).
 * Dataset: [Dataset](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia).
 
-# License
+## 📄License
+This project is released under the **MIT License**.  
+You are free to use, modify, and distribute the code for research and educational purposes, with proper attribution.\
+The Chest X-Ray Images (Pneumonia) dataset is provided by Kaggle and is subject to its original license and usage terms.
+
+See the [LICENSE](LICENSE) file for details.
