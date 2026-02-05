@@ -1,7 +1,12 @@
-# GNNs Mini Competition: Chest X-ray Normal vs Pneumonia (Node Classification)
-Not all graphs are social networks, some can help diagnose lungs.\
-Behind every chest X-ray lies a complex story waiting to be understood.\
+# GNNs Mini Competition: Chest X-ray Graph Classification
+<p align="center">
+Not all graphs are social networks, some can help diagnose lungs.
+ 
+Behind every chest X-ray lies a complex story waiting to be understood.
+
 Welcome to this GNN mini-challenge!! Where chest X-rays become graphs and your model decides: Normal or Pneumonia.
+</p>
+
  ## 💢Problem Description 
  A chest X-ray is a medical imaging technique that uses a small amount of radiation to create images of the structures inside the chest, including the lungs, heart, and airways. It is one of the most common and important tools used by doctors to examine lung conditions.
 
@@ -14,11 +19,16 @@ Pneumonia:
 Pneumonia is a lung infection that causes inflammation of the air sacs in one or both lungs. On a chest X-ray, pneumonia often appears as opaque or cloudy regions, indicating the presence of fluid or infection in the lungs.
 
 Accurate classification of chest X-ray images can help support early detection of pneumonia and improve patient care. \
-In this mini-challenge, the goal is to classify chest X-ray images as Normal or Pneumonia using graph-based learning.
+In this mini-challenge, The goal of this challenge is to perform graph classification on chest X-ray images.
 
-* Each node represents one chest X-ray image.
-* Edges encode similarity between images (e.g., feature similarity via CNN embeddings).
-* Node labels indicate Normal (0) or Pneumonia (1).
+Each chest X-ray image is converted into a graph, where:
+
+* Nodes represent image regions or patches.
+* Edges represent spatial or similarity-based relationships.
+* Node features are extracted from image intensities or handcrafted features.
+* Each graph corresponds to one patient image and has a single label:\
+0 → Normal\
+1 → Pneumonia
 
 Participants will design Graph Neural Network (GNN) models that leverage both node features and the graph structure to classify each X-ray image correctly.
 
