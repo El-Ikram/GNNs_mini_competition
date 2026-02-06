@@ -204,3 +204,8 @@ You are free to use, modify, and distribute the code for research and educationa
 The Chest X-Ray Images (Pneumonia) dataset is provided by Kaggle and is subject to its original license and usage terms.
 
 See the [LICENSE](LICENSE) file for details.
+
+##
+<p align="center"><b>Don’t worry about being perfect, just try!</b></p>
+<p align="center"><b>Good Luck!🤝</b></p>
+
