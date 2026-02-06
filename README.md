@@ -1,10 +1,10 @@
 # GNNs Mini Competition: Chest X-ray Graph Classification
 <p align="center">
-Not all graphs are social networks, some can help diagnose lungs.
+Not all graphs are social networks, some can help diagnose lungs.</p>
  
-Behind every chest X-ray lies a complex story waiting to be understood.
+<p align="center">Behind every chest X-ray lies a complex story waiting to be understood.</p>
 
-Welcome to this GNN mini-challenge!! Where chest X-rays become graphs and your model decides: Normal or Pneumonia.
+<p align="center">Welcome to this GNN mini-challenge!! Where chest X-rays become graphs and your model decides: Normal or Pneumonia.
 </p>
 
  ## 💢Problem Description 
@@ -31,6 +31,16 @@ Each chest X-ray image is converted into a graph, where:
 1 → Pneumonia
 
 Participants will design Graph Neural Network (GNN) models that leverage both node features and the graph structure to classify each X-ray image correctly.
+
+**Task Type:**
+
+* Graph Classification.
+
+* Binary Classification.
+
+* Medical Image Analysis with GNNs.
+
+* Each graph → one label.
 
  ## 🛢️Dataset
 This mini-challenge uses the Chest X-Ray Images (Pneumonia) dataset, a widely used public medical imaging dataset for lung disease classification. The dataset contains frontal chest X-ray images collected from pediatric patients and labeled by medical experts as either Normal or Pneumonia.\
