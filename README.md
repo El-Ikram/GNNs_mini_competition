@@ -8,6 +8,7 @@ Not all graphs are social networks, some can help diagnose lungs.</p>
 </p>
 
 ## Repository Structure
+```text
 DeepLung_Cup/
 │
 |.github/
@@ -59,6 +60,7 @@ DeepLung_Cup/
 ├── scoring_script.py # Evaluation script
 |
 └── update_leaderboard.py # Updates leaderboard automatically
+```
 
  ## 💢Problem Description 
  A chest X-ray is a medical imaging technique that uses a small amount of radiation to create images of the structures inside the chest, including the lungs, heart, and airways. It is one of the most common and important tools used by doctors to examine lung conditions.
